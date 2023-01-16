@@ -27,7 +27,7 @@ Summary:        %{summary}
 
 
 %prep
-%autosetup -p1 -n -%{version}
+%autosetup -p1 -n flask-pyoidc-%{version}
 
 
 %generate_buildrequires
