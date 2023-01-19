@@ -2,11 +2,8 @@ Name:           python-pyjwkest
 Version:        1.4.2
 Release:        1%{?dist}
 Summary:        Python implementation of JWT, JWE, JWS and JWK
-
-# Check if the automatically generated License and its spelling is correct for Fedora
-# https://docs.fedoraproject.org/en-US/packaging-guidelines/LicensingGuidelines/
-License:        ASL
-URL:            https://pypi.org/project/pyjwkest/
+License:        Apache-2.0
+URL:            https://github.com/IdentityPython/pyjwkest
 Source:         %{pypi_source pyjwkest}
 
 BuildArch:      noarch
@@ -14,9 +11,8 @@ BuildRequires:  python3-devel
 
 
 # Fill in the actual package description to submit package to Fedora
-%global _description %{expand:
-This is package 'pyjwkest' generated automatically by pyp2spec.}
-
+%global _description %{expand: 
+Python implementation of JWT, JWE, JWS and JWK, which is used by pyoidc.}
 
 %description %_description
 
@@ -40,9 +36,7 @@ Summary:        %{summary}
 
 %install
 %pyproject_install
-# For official Fedora packages, including files with '*' +auto is not allowed
-# Replace it with a list of relevant Python modules/globs and list extra files in %%files
-%pyproject_save_files '*' +auto
+%pyproject_save_files 'jwkest' +auto
 
 
 %check
