@@ -10,7 +10,6 @@ BuildArch:      noarch
 BuildRequires:  python3-devel
 
 
-# Fill in the actual package description to submit package to Fedora
 %global _description %{expand: 
 Python implementation of JWT, JWE, JWS and JWK, which is used by pyoidc.}
 
