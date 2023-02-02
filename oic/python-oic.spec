@@ -48,4 +48,4 @@ Summary:        %{summary}
 
 %changelog
 * Sun Jan 15 2023 lcrpkking <pkwarcraft@gmail.com> - 1.5.0-1
-- Initial package  
+- Initial package

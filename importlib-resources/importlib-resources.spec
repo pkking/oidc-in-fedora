@@ -2,10 +2,7 @@ Name:           python-importlib-resources
 Version:        5.10.2
 Release:        1%{?dist}
 Summary:        Read resources from Python packages
-
-# Check if the automatically generated License and its spelling is correct for Fedora
-# https://docs.fedoraproject.org/en-US/packaging-guidelines/LicensingGuidelines/
-License:        ASL
+License:        Apache 2.0
 URL:            https://github.com/python/importlib_resources
 Source:         %{pypi_source importlib_resources}
 
@@ -13,9 +10,8 @@ BuildArch:      noarch
 BuildRequires:  python3-devel
 
 
-# Fill in the actual package description to submit package to Fedora
 %global _description %{expand:
-This is package 'importlib-resources' generated automatically by pyp2spec.}
+Read resources from Python packages.}
 
 
 %description %_description
@@ -40,9 +36,7 @@ Summary:        %{summary}
 
 %install
 %pyproject_install
-# For official Fedora packages, including files with '*' +auto is not allowed
-# Replace it with a list of relevant Python modules/globs and list extra files in %%files
-%pyproject_save_files '*' +auto
+%pyproject_save_files 'importlib_resources' +auto
 
 
 %check
