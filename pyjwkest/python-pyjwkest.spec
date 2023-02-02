@@ -2,7 +2,7 @@ Name:           python-pyjwkest
 Version:        1.4.2
 Release:        1%{?dist}
 Summary:        Python implementation of JWT, JWE, JWS and JWK
-License:        Apache-2.0
+License:        Apache-2.0 AND MIT
 URL:            https://github.com/IdentityPython/pyjwkest
 Source:         %{pypi_source pyjwkest}
 
