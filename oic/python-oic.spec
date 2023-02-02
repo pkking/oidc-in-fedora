@@ -2,10 +2,7 @@ Name:           python-oic
 Version:        1.5.0
 Release:        1%{?dist}
 Summary:        Python implementation of OAuth2 and OpenID Connect
-
-# Check if the automatically generated License and its spelling is correct for Fedora
-# https://docs.fedoraproject.org/en-US/packaging-guidelines/LicensingGuidelines/
-License:        ASL
+License:        Apache-2.0
 URL:            https://github.com/OpenIDC/pyoidc/
 Source:         %{pypi_source oic}
 
@@ -13,9 +10,8 @@ BuildArch:      noarch
 BuildRequires:  python3-devel
 
 
-# Fill in the actual package description to submit package to Fedora
 %global _description %{expand:
-This is package 'oic' generated automatically by pyp2spec.}
+Python implementation of OAuth2 and OpenID Connect.}
 
 
 %description %_description
@@ -40,9 +36,7 @@ Summary:        %{summary}
 
 %install
 %pyproject_install
-# For official Fedora packages, including files with '*' +auto is not allowed
-# Replace it with a list of relevant Python modules/globs and list extra files in %%files
-%pyproject_save_files '*' +auto
+%pyproject_save_files 'oic' +auto
 
 
 %check
@@ -53,5 +47,5 @@ Summary:        %{summary}
 
 
 %changelog
-* Sun Jan 15 2023 mockbuilder - 1.5.0-1
-- Initial package
+* Sun Jan 15 2023 lcrpkking <pkwarcraft@gmail.com> - 1.5.0-1
+- Initial package  
