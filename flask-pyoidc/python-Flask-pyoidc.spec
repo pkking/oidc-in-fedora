@@ -1,10 +1,10 @@
 Name:           python-flask-pyoidc
-Version:        3.11.0
+Version:        3.12.1 
 Release:        1%{?dist}
 Summary:        Flask extension for OpenID Connect authentication.
-License:        Apache 2.0
+License:        Apache-2.0
 URL:            https://github.com/zamzterz/flask-pyoidc
-Source:         https://github.com/zamzterz/Flask-pyoidc/archive/refs/tags/v%{version}.tar.gz
+Source:         %{pypi_source flask-pyoidc}
 
 BuildArch:      noarch
 BuildRequires:  python3-devel
@@ -47,5 +47,5 @@ Summary:        %{summary}
 
 
 %changelog
-* Mon Jan 16 2023 lcrpkking <pkwarcraft@gmail.com> - 3.11.0-1
+* Mon Jan 16 2023 lcrpkking <pkwarcraft@gmail.com> - 3.12.1-1
 - Initial package
