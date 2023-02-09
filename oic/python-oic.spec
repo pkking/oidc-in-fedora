@@ -1,5 +1,5 @@
 Name:           python-oic
-Version:        1.5.0
+Version:        1.4.0
 Release:        1%{?dist}
 Summary:        Python implementation of OAuth2 and OpenID Connect
 License:        Apache-2.0
@@ -47,5 +47,5 @@ Summary:        %{summary}
 
 
 %changelog
-* Sun Jan 15 2023 lcrpkking <pkwarcraft@gmail.com> - 1.5.0-1
+* Sun Jan 15 2023 lcrpkking <pkwarcraft@gmail.com> - 1.4.0-1
 - Initial package
