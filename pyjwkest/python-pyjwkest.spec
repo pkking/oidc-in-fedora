@@ -2,6 +2,10 @@ Name:           python-pyjwkest
 Version:        1.4.2
 Release:        1%{?dist}
 Summary:        Python implementation of JWT, JWE, JWS and JWK
+
+# pyjwkest: Apache-2.0
+# src/jwkest/aes_gcm.py: MIT
+License:        GPL-3.0-only and HPND-sell-variant and ISC and MIT
 License:        Apache-2.0 AND MIT
 URL:            https://github.com/IdentityPython/pyjwkest
 Source:         %{pypi_source pyjwkest}
