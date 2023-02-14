@@ -5,6 +5,7 @@ Summary:        Python implementation of JWT, JWE, JWS and JWK
 
 # pyjwkest: Apache-2.0
 # src/jwkest/aes_gcm.py: MIT
+# src/jwkest/PBKDF2.py: MIT
 License:        Apache-2.0 AND MIT
 URL:            https://github.com/IdentityPython/pyjwkest
 Source:         %{pypi_source pyjwkest}
